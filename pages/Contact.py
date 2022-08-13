@@ -7,7 +7,7 @@ import db
  #   speak=Dispatch(("SAPI.SpVoice"))
   #  speak.Speak(str)
 
-st.title("# Get In Touch!")
+st.title("Get In Touch!")
 st.caption("### We're here to help")
 COMMENT_TEMPLATE_MD = """{} - {}
 > {}"""
