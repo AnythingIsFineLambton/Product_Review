@@ -1,11 +1,11 @@
 import streamlit as st
 from datetime import datetime
 import db
-from win32com.client import Dispatch
+#from win32com.client import Dispatch
 
-def speak(str):
-    speak=Dispatch(("SAPI.SpVoice"))
-    speak.Speak(str)
+#def speak(str):
+    #speak=Dispatch(("SAPI.SpVoice"))
+    #speak.Speak(str)
 
 st.title("Get In Touch!")
 st.caption("### We're here to help")
@@ -32,7 +32,7 @@ submit = form.form_submit_button("Submit")
 
 if submit:
     st.success("Successfully Submitted.")
-    speak("Successfully Submitted")
+    #speak("Successfully Submitted")
 
 if submit:
     date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
