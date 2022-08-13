@@ -7,7 +7,6 @@ google-auth-httplib2
 protobuf
 plotly
 wordcloud
-win32-setctime==1.0.3
 win32com
 click==8
 
