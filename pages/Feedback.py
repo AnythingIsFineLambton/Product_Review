@@ -1,12 +1,12 @@
 import streamlit as st
 from datetime import datetime
-#from win32com.client import Dispatch
+from win32com.client import Dispatch
 import db
 
 
-#def speak(str):
- #   speak=Dispatch(("SAPI.SpVoice"))
-  #  speak.Speak(str)
+def speak(str):
+    speak=Dispatch(("SAPI.SpVoice"))
+    speak.Speak(str)
     
 COMMENT_TEMPLATE_MD = """{} - {}
 > {}"""
@@ -33,7 +33,7 @@ submit = form.form_submit_button("Submit")
 
 if submit:
     st.success("Your comment was successfully posted.")
-    #speak("Your comment was successfully posted") 
+    speak("Your comment was successfully posted") 
     
 for index, entry in enumerate(comments.itertuples()):
     st.markdown(COMMENT_TEMPLATE_MD.format(entry.name, entry.date, entry.comment))
